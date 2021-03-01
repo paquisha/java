@@ -29,7 +29,7 @@ public class promedio {
 			if(promedio >= 4 && promedio <7) {
 				System.out.print("Regular, su califiacion es: " + promedio);
 			}else {
-				System.out.print("Reprobado, su calificacion es: " + promedio);
+				System.out.print("Usted esta Reprobado, su calificacion es: " + promedio);
 			}
 		}
 		
