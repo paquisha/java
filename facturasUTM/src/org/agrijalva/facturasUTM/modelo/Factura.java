@@ -10,6 +10,8 @@ public class Factura {
     private Date fechaCreacion;
     private Cliente cliente;
     private ItemFactura[] items;
+    private FacturaContado facturaContado;
+    private FacturaCredito facturaCredito;
     private int indiceItems;
     public static final int MAX_ITEMS = 4;
     private static int ultimoNumeroConsecutivo;
@@ -53,6 +55,22 @@ public class Factura {
 
     public ItemFactura[] getItems() {
         return items;
+    }
+
+    public FacturaContado getFacturaContado() {
+        return facturaContado;
+    }
+
+    public void setFacturaContado(FacturaContado facturaContado) {
+        this.facturaContado = facturaContado;
+    }
+
+    public FacturaCredito getFacturaCredito() {
+        return facturaCredito;
+    }
+
+    public void setFacturaCredito(FacturaCredito facturaCredito) {
+        this.facturaCredito = facturaCredito;
     }
 
     public void addItemsFactura(ItemFactura item){
