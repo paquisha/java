@@ -19,4 +19,12 @@ public class FacturaContado {
     public void setContado(String contado) {
         this.contado = contado;
     }
+
+    @Override
+    public String toString() {
+        return "FacturaContado{" +
+                "debito='" + debito + '\'' +
+                ", contado='" + contado + '\'' +
+                '}';
+    }
 }

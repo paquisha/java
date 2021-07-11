@@ -10,4 +10,11 @@ public class FacturaCredito {
     public void setPlazoMaximo(int plazoMaximo) {
         this.plazoMaximo = plazoMaximo;
     }
+
+    @Override
+    public String toString() {
+        return "FacturaCredito{" +
+                "plazoMaximo=" + plazoMaximo +
+                '}';
+    }
 }
