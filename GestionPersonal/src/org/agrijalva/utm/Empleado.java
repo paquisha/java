@@ -2,90 +2,65 @@ package org.agrijalva.utm;
 
 import java.util.Date;
 
-public class Empleado {
-	private int idEmpleado;
-	private String cedula;
-	private String nombres;
-	private String apellidos;
-	private Date fechaingreso;
-	private float sueldoMensual;
-	private float porcentajeProyecto;
-	private int numeroProyecto;
+public class Empleado extends Persona{
 	
+	Persona persona;
+	private Date fechaIngreso;
+	private float sueldoBasico;
+	private float procentajeProyectos;
+	private int numeroProyectos;
 	
 	
 	public Empleado() {
+	}
+	
+	public Empleado(Persona persona, Date fechaIngreso, float sueldoBasico, float procentajeProyectos,
+			int numeroProyectos) {
 		super();
+		this.persona = persona;
+		this.fechaIngreso = new Date();
+		this.sueldoBasico = sueldoBasico;
+		this.procentajeProyectos = procentajeProyectos;
+		this.numeroProyectos = numeroProyectos;
 	}
 	
 	
-	public Empleado(int idEmpleado, String cedula, String nombres, String apellidos, Date fechaingreso,
-			float sueldoMensual, float porcentajeProyecto, int numeroProyecto) {
-		super();
-		this.idEmpleado = idEmpleado;
-		this.cedula = cedula;
-		this.nombres = nombres;
-		this.apellidos = apellidos;
-		this.fechaingreso = fechaingreso;
-		this.sueldoMensual = sueldoMensual;
-		this.porcentajeProyecto = porcentajeProyecto;
-		this.numeroProyecto = numeroProyecto;
+	public Persona getPersona() {
+		return persona;
 	}
-	public int getIdEmpleado() {
-		return idEmpleado;
+	public void setPersona(Persona persona) {
+		this.persona = persona;
 	}
-	public void setIdEmpleado(int idEmpleado) {
-		this.idEmpleado = idEmpleado;
+	public Date getFechaIngreso() {
+		return fechaIngreso;
 	}
-	public String getCedula() {
-		return cedula;
+	public void setFechaIngreso(Date fechaIngreso) {
+		this.fechaIngreso = fechaIngreso;
 	}
-	public void setCedula(String cedula) {
-		this.cedula = cedula;
+	public float getSueldoBasico() {
+		return sueldoBasico;
 	}
-	public String getNombres() {
-		return nombres;
+	public void setSueldoBasico(float sueldoBasico) {
+		this.sueldoBasico = sueldoBasico;
 	}
-	public void setNombres(String nombres) {
-		this.nombres = nombres;
+	public float getProcentajeProyectos() {
+		return procentajeProyectos;
 	}
-	public String getApellidos() {
-		return apellidos;
+	public void setProcentajeProyectos(float procentajeProyectos) {
+		this.procentajeProyectos = procentajeProyectos;
 	}
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
+	public int getNumeroProyectos() {
+		return numeroProyectos;
 	}
-	public Date getFechaingreso() {
-		return fechaingreso;
+	public void setNumeroProyectos(int numeroProyectos) {
+		this.numeroProyectos = numeroProyectos;
 	}
-	public void setFechaingreso(Date fechaingreso) {
-		this.fechaingreso = fechaingreso;
-	}
-	public float getSueldoMensual() {
-		return sueldoMensual;
-	}
-	public void setSueldoMensual(float sueldoMensual) {
-		this.sueldoMensual = sueldoMensual;
-	}
-	public float getPorcentajeProyecto() {
-		return porcentajeProyecto;
-	}
-	public void setPorcentajeProyecto(float porcentajeProyecto) {
-		this.porcentajeProyecto = porcentajeProyecto;
-	}
-	public int getNumeroProyecto() {
-		return numeroProyecto;
-	}
-	public void setNumeroProyecto(int numeroProyecto) {
-	
-		this.numeroProyecto = numeroProyecto;
-	}
+
 	@Override
 	public String toString() {
-		return "Empleado [idEmpleado=" + idEmpleado + ", cedula=" + cedula + ", nombres=" + nombres + ", apellidos="
-				+ apellidos + ", fechaingreso=" + fechaingreso + ", sueldoMensual=" + sueldoMensual
-				+ ", porcentajeProyecto=" + porcentajeProyecto + ", numeroProyecto=" + numeroProyecto + "]";
+		return "Empleado [persona=" + persona + ", fechaIngreso=" + fechaIngreso + ", sueldoBasico=" + sueldoBasico
+				+ ", procentajeProyectos=" + procentajeProyectos + ", numeroProyectos=" + numeroProyectos + "]";
 	}
-		
+	
 	
 }
