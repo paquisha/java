@@ -20,7 +20,7 @@ public class LeerArchivo {
         }finally {
             try {
                 //cerramos archivo en en cualqueira de los dos casos
-                if(null != fr){
+                if(fr != null){
                     fr.close();
                 }
             }catch (Exception ee){
