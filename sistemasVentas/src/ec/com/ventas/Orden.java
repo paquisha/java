@@ -25,8 +25,18 @@ public class Orden {
 		for(int i = 0; i < this.contadorProductos; i++) {
 			//Producto producto = this.productos[i];
 			//total += producto.getPrecio();//opcional
-			total += this.productos[i].getPrecio();//poo
+			total += this.productos[i].getPrecio();//poo 
 		}
 		return total;
+	}
+	
+	public void mostrarOrden() {
+		System.out.println("Id orden : " + this.idOrden);
+		double totalOrden = this.calcularTotal();
+		System.out.println("Total de la orden: $" + totalOrden);
+		System.out.println("Productos de la orden: ");
+		for(int i = 0; i < this.contadorProductos; i++) {
+			System.out.println(this.productos[i]);
+		}
 	}
 }
