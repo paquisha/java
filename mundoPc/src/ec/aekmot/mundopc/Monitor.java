@@ -1,26 +1,23 @@
 package ec.aekmot.mundopc;
 
 public class Monitor {
-	private int idMonitor;
+	private final int idMonitor;
 	private String marca;
 	private double tamanio;
-	private int contadorMonitores;
+	private static int contadorMonitores;
 	
 	private Monitor() {
-		
+		this.idMonitor = ++Monitor.contadorMonitores;
 	}
 	
-	private Monitor(String marca, double tamanio) {
+	public Monitor(String marca, double tamanio) {
+		this();
 		this.marca = marca;
 		this.tamanio = tamanio;
 	}
 
 	public int getIdMonitor() {
-		return idMonitor;
-	}
-
-	public void setIdMonitor(int idMonitor) {
-		this.idMonitor = idMonitor;
+		return this.idMonitor;
 	}
 
 	public String getMarca() {
