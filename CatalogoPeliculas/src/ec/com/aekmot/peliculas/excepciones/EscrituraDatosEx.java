@@ -1,12 +1,12 @@
 package ec.com.aekmot.peliculas.excepciones;
 
-public class LecturaDatosEx extends AccesoDatosEx {
+public class EscrituraDatosEx extends AccesoDatosEx{
 	
 	private static final long serialVersionUID = 1L;
 
-	public LecturaDatosEx(String mensaje) {
+	public EscrituraDatosEx(String mensaje) {
 		super(mensaje);
 		// TODO Auto-generated constructor stub
 	}
-	
+
 }
