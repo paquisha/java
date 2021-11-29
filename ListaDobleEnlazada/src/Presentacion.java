@@ -10,8 +10,8 @@ public class Presentacion {
                 opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                         "1. Agregar Nodo al inicio\n"
                         + "2. Agregar Nodo al Final\n"
-                        + "3. Mostrar lista de inicio a fin\n"
-                        + "4. Mostrar Lista de fin a inicio\n"
+                        + "3. Mostrar lista de Fin a Inicio\n"
+                        + "4. Mostrar Lista de inicio a Fin\n"
                         + "5. Salir\n"
                         + "Que deseas hacer? ", "Menu de opciones", JOptionPane.INFORMATION_MESSAGE));
                 switch (opcion){

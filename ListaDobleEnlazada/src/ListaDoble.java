@@ -14,25 +14,25 @@ public class ListaDoble {
     }
 
     //metodo para agregar nodos al final
-    public void agregarAlFinal(int elemento){
+    public void agregarAlFinal(int ele){
         if(!estaVacia()){
             //como es al final el puntor siguiente apunta a null
             //y el anterior apuntara al fin
-            fin = new NodoDoble(elemento, null, fin);
+            fin = new NodoDoble(ele, null, fin);
             fin.anterior.siguiente = fin;
         }else{
-            inicio=fin=new NodoDoble(elemento);
+            inicio=fin=new NodoDoble(ele);
         }
     }
 
     //metodo para agregar al inicio
-    public void agregarAlInicio(int elemento){
+    public void agregarAlInicio(int ele){
         if(!estaVacia()){
             //como apuntamos al inicio el puntero anterior sera null
-            inicio = new NodoDoble(elemento, inicio, null);
+            inicio = new NodoDoble(ele, inicio, null);
             inicio.siguiente.anterior=inicio;
         }else{
-            inicio=fin= new NodoDoble(elemento);
+            inicio=fin= new NodoDoble(ele);
         }
     }
 
