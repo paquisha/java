@@ -33,4 +33,36 @@ public class Arboles {
         }
     }
 
+    //metodo para saber cuando el arbol esta vacio
+    public boolean estaVacio(){
+        return raiz == null;
+    }
+
+    //metodo para recorrer el arbol inOrden
+    public void inOrden(NodoArbol r){
+        if(r != null){
+            inOrden(r.hijoIzquierdo);
+            System.out.println(r.dato);
+            inOrden(r.hijoDerecho);
+        }
+    }
+
+    //metodo para recorrer el arbol en preOrden
+    public  void preOrden(NodoArbol r){
+        if(r != null){
+            System.out.println(r.dato);
+            preOrden(r.hijoIzquierdo);
+            preOrden(r.hijoDerecho);
+        }
+    }
+
+    //metodo para recorrer ela rbol en postOrden
+    public void postorden(NodoArbol r){
+        if(r != null){
+            postorden(r.hijoIzquierdo);
+            postorden(r.hijoDerecho);
+            System.out.println(r.dato);
+        }
+    }
+
 }

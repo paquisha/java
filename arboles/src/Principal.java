@@ -9,7 +9,10 @@ public class Principal {
             try{
                 opcion = Integer.parseInt(JOptionPane.showInputDialog(null, "" +
                         "1. Agregar un Nodo\n"
-                        + "2. Salir\n"
+                        +"2. Recorrer arbol InOrden\n"
+                        +"3. Recorrer el arbol preOrden\n"
+                        +"4. Recorrer el arbol postOrden\n"
+                        + "5. Salir\n"
                         + "Elige una opcion: ", "Arboles Binarios", JOptionPane.QUESTION_MESSAGE
                     ));
 
@@ -20,6 +23,27 @@ public class Principal {
                         arbol.agregarNodo(elemento, nombre);
                         break;
                     case 2:
+                        if(!arbol.estaVacio()){
+                            arbol.inOrden(arbol.raiz);
+                        }else{
+                            JOptionPane.showMessageDialog(null, "Arbol esta vacio", "Arbol Vacio", JOptionPane.INFORMATION_MESSAGE);
+                        }
+                        break;
+                    case 3:
+                        if(!arbol.estaVacio()){
+                            arbol.preOrden(arbol.raiz);
+                        }else{
+                            JOptionPane.showMessageDialog(null, "El arbol esta vacio", "Arbol vacio", JOptionPane.INFORMATION_MESSAGE);
+                        }
+                        break;
+                    case 4:
+                        if(!arbol.estaVacio()){
+                            arbol.postorden(arbol.raiz);
+                        }else{
+                            JOptionPane.showMessageDialog(null, "El arbol esta vacio", "Arbol vacio", JOptionPane.INFORMATION_MESSAGE);
+                        }
+                        break;
+                    case 5:
                         JOptionPane.showMessageDialog(null, "Aplicacion finalizada", "Fin", JOptionPane.INFORMATION_MESSAGE);
                         break;
                     default:
