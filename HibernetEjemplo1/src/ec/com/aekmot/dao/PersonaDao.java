@@ -56,4 +56,15 @@ public class PersonaDao {
     public Persona buscarPersonaPorId(Persona p){
         return em.find(Persona.class, p.getIdPersona());
     }
+
+    public void eliminar(Persona persona){
+        try{
+            em.getTransaction().begin();
+            em.remove(em.merge(persona));
+            em.getTransaction().commit();
+        }catch (Exception ex){
+            ex.printStackTrace(System.out);
+            em.getTransaction().rollback();
+        }
+    }
 }

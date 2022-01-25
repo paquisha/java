@@ -9,7 +9,7 @@ public class PruebaHibernate {
         personaDao.listar();
 
         Persona persona = new Persona();
-        persona.setIdPersona(2);
+        persona.setIdPersona(3);
         persona = personaDao.buscarPersonaPorId(persona);
         System.out.println("persona encontrada: " + persona);
 
@@ -31,5 +31,10 @@ public class PruebaHibernate {
         personaModificada.setEmail("iveth@mail.com");
         personaModificada.setTelefono("1234567890");
         personaDao.modificar(personaModificada);*/
+
+        //eliminar
+        personaDao.eliminar(persona);
+        personaDao.listar();
+
     }
 }
