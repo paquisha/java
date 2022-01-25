@@ -3,15 +3,33 @@ import java.util.List;
 
 public class PruebaHibernate {
     public static void main(String[] args) {
-        String hql = "SELECT p FROM Persona p";
-        EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("HibernateEjemplo1");
-        EntityManager entityManager = fabrica.createEntityManager();
 
-        Query query = entityManager.createQuery(hql);
-        List<Persona> personas = query.getResultList();
+        //listar
+        PersonaDao personaDao = new PersonaDao();
+        personaDao.listar();
 
-        for(Persona p: personas){
-            System.out.println("Persona: " + p);
-        }
+        Persona persona = new Persona();
+        persona.setIdPersona(2);
+        persona = personaDao.buscarPersonaPorId(persona);
+        System.out.println("persona encontrada: " + persona);
+
+
+        //insertar
+        /*Persona persona = new Persona();
+        persona.setNombre("Evelyn");
+        persona.setApellido("Benavides");
+        persona.setEmail("evelyn@mail.com");
+        persona.setTelefono("1234567890");
+        personaDao.insertar(persona);*/
+
+
+        //modificar
+        /*Persona personaModificada = new Persona();
+        personaModificada.setIdPersona(2);
+        personaModificada.setNombre("Iveth");
+        personaModificada.setApellido("Pachacama");
+        personaModificada.setEmail("iveth@mail.com");
+        personaModificada.setTelefono("1234567890");
+        personaDao.modificar(personaModificada);*/
     }
 }
