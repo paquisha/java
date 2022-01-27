@@ -40,7 +40,6 @@ public class Conjuntos {
 
 
         //sin repetidos en conjuntos
-        //Set<String> sinRepetidos = new HashSet<>(contabilidad);
         System.out.println("¿Qué personas pertenecen a un único departamento?");
         System.out.println("Contabilidad: " + soloContabilidad);
         System.out.println("Tesoreria: " + soloTesoreria);
