@@ -7,7 +7,7 @@ public class Conjuntos {
     public static void main(String[] args) {
 
         Set <String> contabilidad = new HashSet <>(Arrays.asList("Ana", "Juan", "Johana", "Pedro", "Carlos", "Felipe", "Cecilia"));
-        Set <String> tesoreria = new HashSet<>(Arrays.asList("Tatiana", "Juan", "Marcos", "Rolando", "Miriam", "Felipe", "Cecilia"));;
+        Set <String> tesoreria = new HashSet<>(Arrays.asList("Tatiana", "Juan", "Marcos", "Rolando", "Miriam", "Felipe", "Cecilia"));
 
         System.out.println("Conjunto Contabilidad:" +contabilidad);
         System.out.println("Conjunto tesoreria: "+ tesoreria);
