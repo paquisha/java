@@ -61,7 +61,124 @@ public class dia1While {
                     }
                     break;
                 case 2:
+                    Scanner ingreso2 = new Scanner(System.in);
+                    int x2 = 1;
+                    int cantidadMas = 0;
+                    int cantidadMenos = 0;
+                    int notas = 0;
+                    while (x2 <= 10){
+                        System.out.println("Ingrese nota");
+                        notas = ingreso2.nextInt();
 
+                        if(notas >= 7){
+                            cantidadMas += 1;
+                        }else {
+                            cantidadMenos += 1;
+                        }
+                        x2 += 1;
+                    }
+                    System.out.println("Cantidad de estudiantes con notas mayores a 7: " + cantidadMas);
+                    System.out.println("Cantidad de estudiantes con notas menores a 7: " + cantidadMenos);
+                    break;
+                case 3:
+                    Scanner ingreso3 = new Scanner(System.in);
+                    int x3 = 1;
+                    int cantidad3 = 0;
+                    float altura = 0;
+                    float promedio = 0;
+                    float suma = 0;
+
+                    System.out.println("Ingrese cantidad de personas: ");
+                    cantidad3 = ingreso3.nextInt();
+
+                    while(x3 <= cantidad3){
+                        System.out.println("Ingrese Altura de personas:");
+                        altura = ingreso3.nextFloat();
+
+                        suma = suma + altura;
+
+                        x3 += 1;
+                    }
+                    promedio = suma /cantidad3;
+                    System.out.println("el promedio de estaturas es: " + promedio);
+                    break;
+                case 4:
+                    Scanner ingreso4 = new Scanner(System.in);
+                    float importe = 0, sueldo = 0;
+                    int x4 = 1, empleados = 0, sueldoMenos = 0, sueldoMas = 0;
+
+                    System.out.println("Ingrese numero de empleados: ");
+                    empleados = ingreso4.nextInt();
+
+                    while(x4 <= empleados){
+                        System.out.println("Ingrese sueldo: ");
+                        sueldo = ingreso4.nextFloat();
+
+                        if(sueldo >= 100 && sueldo <= 300){
+                            sueldoMenos += 1;
+                        }else{
+                            sueldoMas += 1;
+                        }
+                        importe = importe + sueldo;
+                        x4 += 1;
+                    }
+                    System.out.println("personas que ganan entre $100 y $300: " + sueldoMenos);
+                    System.out.println("personas que ganan mas de $300: " + sueldoMas);
+                    System.out.println("Importe que invierte la empresa: " + importe);
+                    break;
+                case 5:
+                    int x5 = 1, serie = 0;
+                    while (x5 <= 25){
+                        serie = serie + 11;
+                        System.out.print(serie + "-");
+                        x5 += 1;
+                    }
+                    break;
+                case 6:
+                    int multiplo = 8;
+                    while (multiplo <= 500){
+                        System.out.print(multiplo + "-");
+                        multiplo += 8;
+                    }
+                    break;
+                case 7:
+                    Scanner ingreso7 = new Scanner(System.in);
+                    int x7 = 0, lista1 = 0, lista2 = 0, valor7 = 0;
+
+                    while (x7 <= 15){
+                        System.out.println("Ingrese Valor: ");
+                        valor7 = ingreso7.nextInt();
+                        lista1 += valor7;
+                        x7 += 1;
+                    }
+
+                    while (x7 <= 15){
+                        System.out.println("Ingrese valor: ");
+                        valor7 = ingreso7.nextInt();
+                        lista2 += 1;
+                        x7 += 1;
+                    }
+                    break;
+                case 8:
+                    Scanner ingreso8 = new Scanner(System.in);
+                    int x8 = 1, pares = 0, impares = 0, cantidad8 = 0, valor8 = 0;
+                    System.out.println("Ingrese cantidad de numeros a verificar: ");
+                    cantidad8 = ingreso8.nextInt();
+
+                    while(x8 <= cantidad8){
+                        System.out.println("Ingrese valor: ");
+                        valor8 = ingreso8.nextInt();
+
+                        if(valor8 % 2 == 0){
+                            pares += 1;
+                        }else {
+                            impares += 1;
+                        }
+                        x8 += 1;
+                    }
+
+                    System.out.println("Valor de pares: " + pares);
+                    System.out.println("Valor impares: " + impares);
                     break;
                 default:
                     System.out.println("Opcion no valida");
