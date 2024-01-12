@@ -11,7 +11,7 @@ public class VectorCuarto {
     public void cargarDatos(){
         ingreso = new Scanner(System.in);
         vector = new int[8];
-        for(int i = 0; i < 8; i++){
+        for(int i = 0; i < vector.length; i++){
             System.out.print("Ingrese elemento: ");
             vector[i] = ingreso.nextInt();
         }
