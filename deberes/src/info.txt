@@ -1,0 +1,35 @@
+Para proporcionar un ejemplo con contenido simulado para el archivo "mensaje.txt", podrías crear un archivo de texto con un mensaje que incluya algunas de las palabras clave de phishing. Aquí tienes un ejemplo ficticio:
+
+```plaintext
+Estimado usuario,
+
+Hemos detectado actividades sospechosas en su cuenta. Por favor, haga clic en el siguiente enlace para verificar su información de inicio de sesión y garantizar la seguridad de su cuenta.
+
+Enlace: www.verificacion-segura.com
+
+Recuerde nunca compartir su contraseña con nadie y estar atento a mensajes de phishing.
+
+Atentamente,
+El equipo de soporte
+
+---
+
+¡Felicidades! Ha ganado un premio increíble. Solo necesita proporcionar su información personal para reclamar su premio.
+
+Haga clic aquí para reclamar su premio: premio-gratis.xyz
+
+¡No pierda esta oportunidad única!
+
+---
+
+Estimado cliente,
+
+Su cuenta ha sido bloqueada debido a actividades sospechosas. Por favor, complete el formulario adjunto para desbloquear su cuenta de inmediato.
+
+Adjunto: formulario-desbloqueo.pdf
+
+Gracias por su cooperación.
+
+```
+
+Este es solo un ejemplo y no debe ser utilizado con fines reales, ya que contiene elementos típicos de mensajes de phishing. Asegúrate de usar este código con responsabilidad y solo para propósitos educativos o de prueba.
